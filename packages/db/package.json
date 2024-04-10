@@ -1,0 +1,27 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "generate": "drizzle-kit generate:sqlite",
+    "push": "drizzle-kit push:sqlite",
+    "migrate": "drizzle-kit generate:sqlite --schema=./src/schema",
+    "studio": "drizzle-kit studio --port 3333"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.4.3",
+    "@t3-oss/env-core": "^0.8.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.29.3",
+    "nanoid": "^5.0.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
+  }
+}
